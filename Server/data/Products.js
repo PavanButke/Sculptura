@@ -32,28 +32,7 @@ const products = [
     rating: 3.5,
     numReviews: 3,
   },
-  {
  
-    name: "Lace Casual Boots For Boys & Girls  (Tan)",
-    image: "/images/3.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 399,
-    countInStock: 10,
-    rating: 5,
-    numReviews: 9,
-  },
-  {
- 
-    name: "Lace Walking Shoes For Boys & Girls  (Pink)",
-    image: "/images/2.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 49,
-    countInStock: 7,
-    rating: 2,
-    numReviews: 2,
-  },
   {
 
     name: "Women Red Heels Sandal",
@@ -65,6 +44,17 @@ const products = [
     rating: 0,
     numReviews: 0,
   },
-];
+   {
+ 
+    name: "Lace Walking Shoes For Boys & Girls  (Pink)",
+    image: "/images/2.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 49,
+    countInStock: 7,
+    rating: 2,
+    numReviews: 2,
+  },
+]
 
 export default products;
