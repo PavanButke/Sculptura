@@ -58,7 +58,7 @@ userRouter.post(
             });
         }
         else {
-            res.status(400) 
+            res.status(400)
             throw new Error("Invalid User Data")
         }
     })
@@ -87,5 +87,51 @@ userRouter.get(
         }
     })
 );
+
+// LOGIN
+export const userLoginReducer = (state = {}, action) => {
+    switch (action.type) {
+        case USER_LOGIN_REQUEST:
+            return { loading: true };
+        case USER_LOGIN_SUCCESS:
+            return { loading: false, userInfo: action.payload };
+        case USER_LOGIN_FAIL:
+            return { loading: false, error: action.payload };
+        case USER_LOGOUT:
+            return {};
+        default:
+            return state;
+    }
+};
+
+// UPDATE PROFILE
+userRouter.put(
+    "/profile",
+    protect,
+    asyncHandler(async (req, res) => {
+        const user = await User.findById(req.user._id);
+        if (user) {
+            user.name = req.body.name || user.name
+            user.email = req.body.email || user.email
+            if (req.body.password) {
+                user.password = req.body.password
+            }
+            const updatedUser = await user.save()
+            res.json({
+                _id: updatedUser._id,
+                name: updatedUser.name,
+                email: updatedUser.email,
+                isAdmin: updatedUser.isAdmin,
+                createdAt: updatedUser.createdAt,
+                token: generateToken(updatedUser._id),
+            })
+        } else {
+            res.status(404);
+            throw new Error("User not found");
+        }
+    })
+);
+
+
 
 export default userRouter;
