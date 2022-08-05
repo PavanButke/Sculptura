@@ -5,7 +5,8 @@ import connectDatabase from "./config/Mongodb.js";
 import ImportData from "./DataImport.js"
 import productRoute from './Routes/ProductRoute.js';
 import { errorHandler, notFound } from "./Middleware/Errors.js";
-import userRouter from './Routes/UserRouters.js';
+import userRouter from './Routes/UserRoutes.js';
+import orderRouter from "./Routes/OrderRoutes.js";
 
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/api/import", ImportData);
 app.use("/api/products", productRoute);
 app.use("/api/users", userRouter)
+app.use("/api/orders", orderRouter)
 
 app.use(notFound)
 app.use(errorHandler)

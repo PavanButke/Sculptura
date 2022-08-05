@@ -1,8 +1,8 @@
 import express from "express";
 import asyncHandler from "express-async-handler";
 import User from "../Models/UserModel.js";
-import generateToken from './../utils/generateToken.js';
-import protect from './../Middleware/AuthMiddleware.js';
+import generateToken from '../utils/generateToken.js';
+import protect from '../Middleware/AuthMiddleware.js';
 
 
 const userRouter = express.Router();
