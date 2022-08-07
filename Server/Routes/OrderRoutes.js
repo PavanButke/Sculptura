@@ -69,6 +69,21 @@ orderRouter.get(
     })
 );
 
+
+//USER LOGIN ORDERS
+orderRouter.get(
+    "/",
+    protect,
+    asyncHandler(async (req, res) => {
+       const order= await Order.find({user: req.user_id}).sort({_id:-1});
+        if(order){
+            res.json(order)
+        }
+    })
+);
+
+
+
 //ORDER is PAID
 orderRouter.put(
     "/:id/pay",
