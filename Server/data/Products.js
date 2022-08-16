@@ -1,83 +1,70 @@
 const products = [
   {
    
-    name: "Velcro Ballerinas For Girls  (Pink)",
+    name: "Ganesh Feta (गणेश फेटा)",
     image: "/images/6.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 89,
+    price: 811,
     CountInStock: 3,
     rating: 4,
     numReviews: 4,
   },
   {
-   
-    name: "Velcro Sneakers For Boys & Girls  (Blue)",
+  
+    name: "Gajmukh Design101 (Feta)",
     image: "/images/5.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 599,
+    price: 1001,
     CountInStock: 10,
     rating: 2,
     numReviews: 2,
   },
   {
-  
-    name: "Sesame Street Unisex-Child ELMO Puppet Slipper",
+    
+    name: "Gajanan Design 111",
     image: "/images/4.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 929,
-    CountInStock: 0,
+    price: 1901,
+    CountInStock: 1,
     rating: 3.5,
     numReviews: 3,
   },
+  {
  
+    name: "Gajanan Design 111(New)",
+    image: "/images/3.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 1391,
+    CountInStock: 10,
+    rating: 5,
+    numReviews: 9,
+  },
+  {
+  
+    name: "Gajanan Design 1111 (Pink)",
+    image: "/images/2.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 411,
+    CountInStock: 7,
+    rating: 2,
+    numReviews: 2,
+  },
   {
 
-    name: "Women Red Heels Sandal",
+    name: "Gajanan Design 1101",
     image: "/images/1.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 29,
-    CountInStock: 1,
+    price: 1121,
+    CountInStock: 0,
     rating: 0,
     numReviews: 0,
   },
-   {
- 
-    name: "Lace Walking Shoes For Boys & Girls  (Pink)",
-    image: "/images/2.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 49,
-    CountInStock: 4,
-    rating: 2,
-    numReviews: 2,
-  },
-
-  {
- 
-    name: "Pace Walking Shoes For Boys & Girls  (Pink)",
-    image: "/images/2.png",
-    description:
-      "Lorem= Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 19,
-    CountInStock: 4,
-    rating: 2,
-    numReviews: 2,
-  },
-  {
- 
-    name: "Cace Walking Shoes For Boys & Girls  (Pink)",
-    image: "/images/2.png",
-    description:
-      "Lorem=d Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 19,
-    CountInStock: 4,
-    rating: 2,
-    numReviews: 2,
-  },
-]
+];
 
 export default products;
