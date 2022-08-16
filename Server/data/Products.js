@@ -55,6 +55,29 @@ const products = [
     rating: 2,
     numReviews: 2,
   },
+
+  {
+ 
+    name: "Pace Walking Shoes For Boys & Girls  (Pink)",
+    image: "/images/2.png",
+    description:
+      "Lorem= Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 19,
+    CountInStock: 4,
+    rating: 2,
+    numReviews: 2,
+  },
+  {
+ 
+    name: "Cace Walking Shoes For Boys & Girls  (Pink)",
+    image: "/images/2.png",
+    description:
+      "Lorem=d Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 19,
+    CountInStock: 4,
+    rating: 2,
+    numReviews: 2,
+  },
 ]
 
 export default products;

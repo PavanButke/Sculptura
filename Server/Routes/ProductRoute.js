@@ -8,11 +8,23 @@ const productRoute= express.Router();
 //GET ALL PRODUCTS
 productRoute.get(
 "/",
-asyncHandler(async (req,res) => {
-const products = await Product.find({});
-res.json(products);
-})
-);
+asyncHandler(async (req, res) => {
+    const pageSize = 3;
+    const page = Number(req.query.pageNumber) || 1;
+    const keyword = req.query.keyword
+    ? {
+    name: {
+    $regex: req.query.keyword,
+    $options: "i",
+    },
+    }
+    : {};
+    const count = await Product.countDocuments({ ... keyword});
+    const products = await Product.find({ ... keyword }) 
+    .limit(pageSize).skip(pageSize * (page - 1)).sort({ _id: -1 });
+    res.json({products, page,pages:Math.ceil(count / pageSize)});
+    })
+    );
 
 //ONE PRODUCT AT A TIME
 productRoute.get(
