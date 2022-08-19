@@ -6,16 +6,16 @@ import productRoute from './Routes/ProductRoute.js';
 import { errorHandler, notFound } from "./Middleware/Errors.js";
 import userRouter from './Routes/UserRoutes.js';
 import orderRouter from "./Routes/OrderRoutes.js";
-import Razorpay from 'razorpay';
-import paymentRoutes from './Routes/paymentRoutes.js';
-import cors from "cors";
+// import Razorpay from 'razorpay';
+// import paymentRoutes from './Routes/paymentRoutes.js';
+// import cors from "cors";
 
 dotenv.config();
 connectDatabase();
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
