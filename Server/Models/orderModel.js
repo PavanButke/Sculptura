@@ -27,6 +27,7 @@ const orderSchema = new mongoose.Schema(
       update_time: String,
       email_address: String,
     },
+    
     itemsPrice: { type: Number, required: true },
     shippingPrice: { type: Number, required: true },
 
@@ -36,6 +37,13 @@ const orderSchema = new mongoose.Schema(
     paidAt: { type: Date },
     isDelivered: { type: Boolean, default: false },
     deliveredAt: { type: Date },
+    isPaid: Boolean,
+    amount: Number,
+    razorpay: {
+      orderId: String,
+      paymentId: String,
+      signature: String,
+    }
   },
   {
     timestamps: true,
